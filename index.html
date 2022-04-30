@@ -12,12 +12,10 @@
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-        <form method="GET" action="results.html"> 
-            <!-- TODO: Set Action and Method Properties -->
+        <form action="results.html" method="get"> 
             <div>
                 <label for="firstname">Your First Name</label>
                 <input type="text" id="firstname" name="firstname">
-                <!-- TODO: Create a "lastname" input with type "text" -->
                 <label for="lastname">Last Name:</label>
                 <input type="text" id="lastname" name="lastname">
                
@@ -26,10 +24,11 @@
                         <label for="email">Your Email</label>
                         <input type="text" id="email" name="email"> 
                         <label for="street Address">Street Address</label>
-                        <input type="text" id="streetaddress" name="streetaddress">
+                        <input type="text" id="address" name="address">
                         <label for="city">City</label>
                         <input type="text" id="city" name="city">
-                        <select name="state"> 
+                        <label for="state">Your State</label>
+                        <select name="state" id="state">
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
                             <option value="AZ">Arizona</option>
@@ -82,23 +81,13 @@
                         </select>
                         
                         <label for="zipcode">Zip Code</label>
-                        <input type="text" id="zipcode" name="zipcode">
+                        <input type="text" id="zip" name="zip">
                         <!-- Todo: Street Address Input -->
                         <!-- Todo: City, State, and Zip Inputs -->
                     </fieldset>
-                </form>
-                
-                </form>
-            </div>
-            <!-- TODO: Make fieldset and legend -->
-            <!-- Todo: Email Input -->
-            <!-- Todo: Street Address Input -->
-            <!-- Todo: City, State, and Zip Inputs -->
 
-            <!-- TODO: Second fieldset -->
-            <!-- TODO: Radio buttons for selecting preferred destination -->
-            <!-- TODO: Color input for selecting favorite color -->
-            <!-- TODO: Checkboxes for selecting extra add-ons -->
+            </div>
+            
             <fieldset>
                 <legend>Your Preferences</legend>
                 <h3>Choose your location</h3>
@@ -120,11 +109,11 @@
                 </div>
             </fieldset>
             <fieldset>
-                <input type="checkbox" id="hottub" name="hottub" value="hottub">
+                <input type="checkbox" id="hottub" name="extras" value="hottub">
                 <label for="hottub">Hot Tub</label><br>
-                <input type="checkbox" id="sauna" name="sauna" value="sauna">
+                <input type="checkbox" id="sauna" name="extras" value="sauna">
                 <label for="sauna">Sauna</label><br>
-                <input type="checkbox" id="message" name="message" value="message">
+                <input type="checkbox" id="message" name="extras" value="message">
                 <label for="message">Message</label><br>
             </fieldset>
             <fieldset>
